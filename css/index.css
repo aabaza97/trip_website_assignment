@@ -1,0 +1,201 @@
+@import url(shared.css);
+@import url(card.css);
+@import url(resp.css);
+/* 
+:root {
+    --body-bg-color: #162133;
+    --footer-bg-color: #141D2C;
+    --sky-blue-ofwhite: #F1F5FE;
+    --light-blue-gray: #B1B6C8;
+    --dark-blue-gray: #515877;
+    --pinkish-red: #FF5A5A;
+    --inactive-links: #4E5D7B;
+    --card-gradient-dark: #272F3E;
+    --card-gradient-light: #4E5D7B; 
+}
+ */
+
+/* Samll Activity cards */
+div.card-option-sm{
+    display: inline-block;
+    width: 140px;
+    height: 120px;
+    background-color: var(--sky-blue-ofwhite);
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+div.card-option-sm 
+div.icon{
+    width: 70%;
+    height: 70px;
+    margin: 10px auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+div.card-option-sm 
+p{
+    font-weight: bold;
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    color: var(--dark-blue-gray);
+}
+
+/* Large Program Cards */
+
+
+div.card-option-lg{
+    display: inline-block;
+    background-color: var(--footer-bg-color);
+    width: 480px;
+    height: 501px;
+    margin-right: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+div.card-option-lg 
+div.card-option-lg-info-container{
+    max-width: 100%;
+    height: 100%;
+    background: linear-gradient(360deg, rgba(0,0,0,0.9), rgba(0,0,0,0.0));
+    text-align: left;
+    padding: 20px;
+}
+
+div.card-option-lg 
+div.card-option-lg-info-container 
+h2 {
+    /* 
+    500px => card height
+    50px => bottom row height 
+    30px => h2 height
+    30px => p margins
+    50 => p height
+    20px => bottom padding
+     */
+     color: white;
+    padding-top: calc(500px - 50px - 30px - 30px - 50px - 10px);
+}
+
+
+div.card-option-lg 
+div.card-option-lg-info-container
+p.description{
+    max-width: 66%;
+   
+    font-size: 10px;
+    color: var(--sky-blue-ofwhite);
+     /*  */
+    max-height: 50px; 
+    margin-bottom: 20px;
+    overflow:hidden;
+    white-space:normal;
+    opacity: 0.9;
+}
+
+div.card-option-lg-bottom-container{
+    height: 50px;
+    overflow: hidden;
+}
+
+div.card-option-lg-bottom-container
+div.card-options-info-left{
+    float: left;
+}
+
+div.card-options-info-left
+div.info-container{
+    float: left;
+    width: 120px;
+}
+
+div.card-options-info-left
+div.info-container
+div.info-icon{
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-size: 9px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--sky-blue-ofwhite);
+    border-radius: 50%;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+div.card-options-info-left
+div.info-container
+p{
+    float: left;
+    height: 20px;
+    margin: 5px 0;
+    margin-left: 10px;
+    vertical-align: middle;
+    font-size: 10px;
+    font-weight: 300;
+    color: var(--sky-blue-ofwhite);
+    opacity: 0.9;
+}
+
+div.card-option-lg-bottom-container
+div.card-options-info-right{
+    float: right;
+    width: 150px;
+}
+
+div.card-options-info-right
+div.info-icon{
+    float: right;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+
+div.card-options-info-right
+div.button{
+    float: right;
+    height: 30px;
+    width: 95px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--pinkish-red);
+}
+div.card-options-info-right
+div.button
+div.button-container{
+    text-align: center;
+}
+
+div.card-options-info-right
+div.button
+div.button-container
+div.button-icon{
+    float: left;
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 7px !important;
+}
+
+div.card-options-info-right
+div.button
+div.button-container
+div{
+    float: left;
+    margin-left: 10px;
+    margin-top: 7px;
+    font-size: 11px;
+    font-weight: 300;
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11.588" height="16.224" viewBox="0 0 11.588 16.224">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #162133;
+      }
+    </style>
+  </defs>
+  <path id="Icon_ionic-md-pin" data-name="Icon ionic-md-pin" class="cls-1" d="M12.544,2.25A5.754,5.754,0,0,0,6.75,7.928c0,4.259,5.794,10.545,5.794,10.545s5.794-6.287,5.794-10.545A5.754,5.754,0,0,0,12.544,2.25Zm0,7.706a2.028,2.028,0,1,1,2.069-2.028A2.029,2.029,0,0,1,12.544,9.956Z" transform="translate(-6.75 -2.25)"/>
+</svg>

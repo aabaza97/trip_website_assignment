@@ -1,0 +1,51 @@
+
+.card-container {
+    max-width: 100%;
+    margin: 0 50px;
+    margin-bottom: 50px;
+}
+
+.card{
+    max-width: 100%;
+    border-radius: 25px;
+    overflow: hidden !important;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.card div.card-options-container{
+    display: inline-block;
+    max-width: 100%;
+    margin-top: 20px;
+    padding-left: 20px;
+    overflow: scroll;
+    white-space: nowrap;
+}
+.card div.card-options-container a{
+    text-decoration: none;
+}
+
+.card h2.title {
+    color: var(--sky-blue-ofwhite);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+.card p.subtitle {
+    color: var(--sky-blue-ofwhite);
+    font-weight: 200;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.card.bg-discover a {
+    color: var(--sky-blue-ofwhite);
+}
+
+.card a p{
+    color: var(--sky-blue-ofwhite);
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+}

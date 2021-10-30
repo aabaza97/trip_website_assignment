@@ -1,0 +1,25 @@
+<svg id="Background" xmlns="http://www.w3.org/2000/svg" width="3029" height="2387" viewBox="0 0 3029 2387">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #515877;
+      }
+
+      .cls-1 {
+        opacity: 0.2;
+      }
+
+      .cls-2 {
+        opacity: 0.4;
+      }
+
+      .cls-3 {
+        fill: #b1b6c8;
+        opacity: 0.1;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_10" data-name="Ellipse 10" class="cls-1" cx="1005.5" cy="1005.5" r="1005.5"/>
+  <circle id="Ellipse_12" data-name="Ellipse 12" class="cls-2" cx="39" cy="39" r="39" transform="translate(2163 511)"/>
+  <circle id="Ellipse_11" data-name="Ellipse 11" class="cls-3" cx="446.5" cy="446.5" r="446.5" transform="translate(2136 1494)"/>
+</svg>

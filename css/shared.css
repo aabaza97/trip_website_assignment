@@ -1,0 +1,319 @@
+/* Colors */
+:root {
+    --body-bg-color: #162133;
+    --footer-bg-color: #141D2C;
+    --sky-blue-ofwhite: #F1F5FE;
+    --light-blue-gray: #B1B6C8;
+    --dark-blue-gray: #515877;
+    --pinkish-red: #FF5A5A;
+    --inactive-links: #4E5D7B;
+    --card-gradient-dark: #272F3E;
+    --card-gradient-light: #4E5D7B; 
+}
+
+/* Universal Rules */
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    font-family: -apple-system, BlinkMacSystemFont;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    background-image: url("../imgs/bg.svg");
+    background-size: 120%;
+    background-position-y: -115px;
+    background-position-x: -230px;
+    background-repeat: no-repeat;
+    color: var(--sky-blue-ofwhite);
+}
+
+/* Top Bar */
+nav{
+    max-width: 100% !important;
+    padding-bottom: 10px !important;
+    overflow: hidden !important;
+} 
+
+
+.logo {
+    float: left;
+    padding-top: 10px;
+}
+
+.logo .logo-font{
+    font-weight: bold;
+    font-size: 28px;
+    display: inline-block;
+    vertical-align: middle;
+}    
+.avatar-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden !important;
+}
+
+.nav-links{
+    float: right;
+}
+
+.nav-links ul a {
+    text-decoration: none;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    margin: 0 10px;
+    color: var(--inactive-links);
+    list-style-type: none;
+    font-size: 15px;
+    vertical-align: middle;
+
+}
+
+/* Search Section */
+.search {
+    padding-top: 20px !important;
+}
+
+.search-bar-container{
+    display: inline-block;
+    background-color: var(--sky-blue-ofwhite);
+    height: 50px;
+    width: 300px;
+    border-radius: 25px;
+    overflow: hidden !important;
+}
+
+.section-container form {
+    float: left;
+}
+
+.search-bar-container input{
+    float: left;
+    background-color: transparent;
+    /*  
+        300px => width of the container
+        20px => left padding of the text input
+        40px => width of the button
+        10px => button margins
+        5px => input right padding 
+    */
+    width: calc(300px - 20px - 40px - 10px - 5px);
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 5px;
+    font-weight: 700;
+}
+
+.search-bar-container input::placeholder{
+    color: var(--body-bg-color);
+    
+}
+
+.search-bar-container a, .section-container a{
+    text-decoration: none;
+}
+.search-bar-container a div.search-button{
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: var(--dark-blue-gray);
+    background-image: url("../imgs/icons/search.svg");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section-container a div.filter-button{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px 20px;
+    background-color: var(--dark-blue-gray);
+    background-image: url("../imgs/icons/filter.svg");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+footer 
+.container{
+    max-width: 100%;
+    padding: 50px;
+    background-color: var(--footer-bg-color);
+    border-color: var(--dark-blue-gray);
+    border-top: 0.25px solid var(--dark-blue-gray);
+}
+
+
+
+footer
+.container
+div{
+    display: inline-block;
+    width: 33%;
+}
+
+footer
+.container
+.middle{
+    text-align: center;
+}
+
+footer
+.container
+div
+ul
+a{
+    color: var(--light-blue-gray);
+    text-decoration: none;
+}
+
+footer
+.container
+div
+ul
+li{
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 70%;
+    color: var(--light-blue-gray);
+    padding: 0px 20px;
+}
+
+
+footer
+.container
+div.middle
+ul
+a:nth-child(2) li{
+    border-right: 0.3px solid var(--light-blue-gray) !important;
+    border-left: 0.3px solid var(--light-blue-gray) !important;
+}
+
+footer
+.container
+div.left{
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.icon-links{
+    text-align: right;
+}
+
+footer
+.container
+div
+.icon-links
+.link{
+    width: 24px ;
+    height: 24px ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 0px;
+    padding-left: 20px;
+}
+
+
+/* 
+    Abstract Rules------------------------------------------------------
+    ** combine with other classes to add extra properties or override others to
+    some element within the structure...
+ */
+
+ .active-nav-link{
+    font-weight: bold;
+    color: var(--sky-blue-ofwhite) !important;
+ }
+
+ .section-container{
+    padding: 50px;
+ }
+
+
+ /* Icons */
+.ic-balooning{
+    background-image: url("../imgs/icons/balooning.svg");
+    background-size: 62% !important; 
+}
+.ic-hiking{
+    background-image: url("../imgs/icons/hiking.svg");
+    background-size: 72% !important; 
+}
+.ic-camping{
+    background-image: url("../imgs/icons/camping.svg");
+    background-size: 62% !important; 
+}
+.ic-skating{
+    background-image: url("../imgs/icons/skating.svg");
+    background-size: 62% !important; 
+}
+.ic-snorkeling{
+    background-image: url("../imgs/icons/snorkeling.svg");
+    background-size: 66% !important; 
+}
+.ic-info{
+    background-image: url("../imgs/icons/info.svg");
+    background-size: contain;
+}
+.ic-heart{
+    background-image: url("../imgs/icons/heart.svg");
+}
+.ic-location{
+    background-image: url("../imgs/icons/location-pin.svg");
+}
+.ic-calendar{
+    background-image: url("../imgs/icons/calendar.svg");
+}
+
+.ic-facebook{
+    background-image: url("../imgs/icons/facebook.svg");
+}
+.ic-twitter{
+    background-image: url("../imgs/icons/twitter.svg");
+}
+.ic-linkedin{
+    background-image: url("../imgs/icons/linkedin.svg");
+}
+
+/* Backgrounds */
+
+.bg-adventures {
+    background: url("../imgs/adventure-section-bg.png"),linear-gradient(45deg, var(--card-gradient-dark), var(--card-gradient-light));
+}
+
+.bg-discover {
+    background: url("../imgs/discover-section-bg.png"),linear-gradient(45deg, var(--card-gradient-dark), var(--card-gradient-light));
+}
+
+.bg-venice{
+    background-image: url("../imgs/cities/venice.jpg");
+    background-size: cover;
+    background-position: -150px;
+}
+.bg-fuji{
+    background-image: url("../imgs/cities/fuji.jpg");
+    background-size: cover;
+    background-position: -150px;
+}
+.bg-milan{
+    background-image: url("../imgs/cities/milan.jpg");
+    background-size: cover;
+    background-position: -150px;
+}
+.bg-swizerland{
+    background-image: url("../imgs/cities/swizerland.jpg");
+    background-size: cover;
+    background-position: -150px;
+}
+

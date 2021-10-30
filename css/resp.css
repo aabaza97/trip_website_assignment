@@ -1,0 +1,18 @@
+@media only screen and (max-width: 800px) {
+    .nav-links ul li {
+        font-size: 13px;
+    }
+
+    footer
+    .container
+    div{
+        display: block !important;
+        width: 100%;
+        text-align: center !important;
+        margin-bottom: 20px;
+    }
+
+    .icon-links{
+        text-align: center;
+    }
+}
